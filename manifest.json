@@ -8,9 +8,9 @@
     "32": "favicon32.png",
     "48": "favicon48.png",
     "64": "favicon64.png",
-    "128": "favicon128.png" 
+    "128": "favicon128.png"
   },
-  "description": "Simple extension to include an option on Scratch pages to use the Phosphorus player.",
+  "description": "Simple extension to include an option on Scratch player pages to use the Phosphorus player.",
   "content_scripts": [
   {
     "matches": [
@@ -25,6 +25,5 @@
     ],
     "js": ["content.js"]
   }
-
 ]
 }
