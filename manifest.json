@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Phosphorus Option",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "16": "favicon16.png",
     "24": "favicon24.png",
@@ -10,9 +10,11 @@
     "64": "favicon64.png",
     "128": "favicon128.png"
   },
+  "permissions": [
+    "storage"
+  ],
   "description": "Simple extension to include an option on Scratch player pages to use the Phosphorus player.",
-  "content_scripts": [
-  {
+  "content_scripts": [{
     "matches": [
       "*://scratch.mit.edu/projects/*"
     ],
@@ -24,6 +26,9 @@
       "*://scratch.mit.edu/projects/*/studios/"
     ],
     "js": ["content.js"]
+  }],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
   }
-]
 }
